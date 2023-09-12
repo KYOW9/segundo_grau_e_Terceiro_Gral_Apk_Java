@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/padd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Principal:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!-- Editar o lugar onde você recebe o valor "a" -->
+    <EditText
+        android:id="@+id/etA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o valor de a"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        android:autofillHints=""
+        tools:ignore="HardcodedText" />
+
+    <!-- Editar o lugar onde você recebe o valor "b" -->
+    <EditText
+        android:id="@+id/etB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o valor de b"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        android:autofillHints=""
+        tools:ignore="HardcodedText" />
+
+    <!-- Editar o lugar onde você recebe o valor "c" -->
+    <EditText
+        android:id="@+id/etC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o valor de c"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        android:autofillHints=""
+        tools:ignore="HardcodedText" />
+
+    <!-- Editar o lugar onde você recebe o valor "d" (no caso da equação de terceiro grau) -->
+    <EditText
+        android:id="@+id/etD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o valor de d (apenas para equação de terceiro grau)"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        android:minHeight="48dp"
+        android:autofillHints=""
+        tools:ignore="HardcodedText" />
+
+    <!-- Editar o lugar onde você recebe a resposta final -->
+    <EditText
+        android:id="@+id/etRespostaFinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_a_resposta_final"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnSecondDegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="solveSecondDegreeEquation"
+        android:text="Equação de segundo grau"
+        android:textColor="#000000"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnThirdDegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="solveThirdDegreeEquation"
+        android:text="Equação de terceiro grau"
+        android:textColor="#000000"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <!-- Botão de calcular -->
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#0040FF"
+        android:onClick="calcular"
+        android:text="Calcular"
+        android:visibility="gone"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+</LinearLayout>

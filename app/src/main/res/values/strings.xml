@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">equação do Segundo e Terceiro Gral</string>
+    <string name="digite_o_valor_de_a" />
+    <string name="menu_principal" />
+    <string name="digite_o_valor_de_b" />
+    <string name="digite_o_valor_de_c" />
+    <string name="digite_o_valor_de_d_apenas_para_equacao_de_terceiro_grau" />
+    <string name="equacao_de_segundo_grau" />
+    <string name="equacao_de_terceiro_grau" />
+    <string name="calculaR" />
+    <string name="digite_a_resposta_final">Digite a resposta final</string>
+</resources>
